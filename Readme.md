@@ -1,7 +1,7 @@
 # Nginx-docker
 
 ```
-docker run -p 80:80 -p 443:443 --name nginx -it -v <local/folder to default.conf>:/etc/nginx/sites-enabled nginx-docker:latest
+docker run -p 80:80 -p 443:443 --name nginx -it -v <local/folder to default.conf>:/etc/nginx/sites-enabled bennexy/nginx-docker:latest
 ```
 
 1. Port forward all trafik to the docker
