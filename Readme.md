@@ -1,8 +1,8 @@
 # Nginx-docker
 
-
+```
 docker run -p 80:80 -p 443:443 --name nginx -it -v <local/folder to default.conf>:/etc/nginx/sites-enabled nginx-docker:latest
-
+```
 
 1. Port forward all trafik to the docker
 2. Test is dns resolution works (if you can reach the server via http:// )
