@@ -8,6 +8,8 @@ docker run -p 80:80 -p 443:443 --name nginx -it -v <local/folder to default.conf
 2. Test is dns resolution works (if you can reach the server via http:// )
 3. Issue https -> `certbot --nginx -d example.com` 
 
+[docker-hub](https://hub.docker.com/r/bennexy/nginx-docker)
+
 ### default.conf example
 ```
 
