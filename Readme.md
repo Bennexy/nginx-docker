@@ -18,9 +18,9 @@ server {
     server_name    e.hexle.at;
 
     location / {
-				proxy_pass    http://192.168.50.33:8080;
-				# these are additional configs - not required but nice to have
-				proxy_redirect     off;
+	proxy_pass    http://192.168.50.33:8080;
+	# these are additional configs - not required but nice to have
+	proxy_redirect     off;
         proxy_set_header   Host $host;
         proxy_set_header   X-Real-IP $remote_addr;
         proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
