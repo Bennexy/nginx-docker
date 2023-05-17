@@ -3,6 +3,10 @@
 ```
 docker run -d -p 80:80 -p 443:443 --name nginx -it -v <local/folder to default.conf>:/etc/nginx/sites-enabled bennexy/nginx-docker:latest
 ```
+If you allready have the /etc/letsencrypt/ folder contents on your local machine
+```
+docker run -d -p 80:80 -p 443:443 --name nginx -it -v <local/folder to default.conf>:/etc/nginx/sites-enabled -v <local/folder/to/letsencypt>:/etc/letsenrypt bennexy/nginx-docker:latest
+```
 
 1. Port forward all trafik to the docker
 2. Test is dns resolution works (if you can reach the server via http:// )
